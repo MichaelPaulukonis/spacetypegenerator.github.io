@@ -88,7 +88,7 @@ function draw(){
   stackNum = stackNumSlider.value();
   rRotate = rRotateSlider.value();
   rOffset = rOffsetSlider.value();
-	rWaveCount = rWaveCountSlider.value();
+  rWaveCount = rWaveCountSlider.value();
   rWaveSpeed = rWaveSpeedSlider.value();
   rWave = rWaveSlider.value();  
   rZaxis = rZaxisSlider.value();
@@ -116,6 +116,7 @@ function draw(){
   strokeWeight(1);
   line(10,130,130,130);
   line(10,350,130,350);
+  line(10,450,130,450);    
   
   fill(strkColor);
 	textSize(9);
@@ -137,10 +138,11 @@ function draw(){
   text("TYPE: Y-Scale " + typeY,15,396);
   text("TYPE: Weight " + typeStroke,15,426);
   
-	text("TWEAK: X Rotation " + xRotTweak,15,height-301);
-	text("TWEAK: Y Rotation " + yRotTweak,15,height-271);
-	text("TWEAK: Z Rotation " + zRotTweak,15,height-241);
-  text("INVERT",30,height-186);
+	text("TWEAK: X Rotation " + xRotTweak,15,466);
+	text("TWEAK: Y Rotation " + yRotTweak,15,496);
+	text("TWEAK: Z Rotation " + zRotTweak,15,526);
+  
+    text("INVERT",30,height-186);
 	text("CAMERA: Zoom",15,height-22);
   
   translate(0,height);
