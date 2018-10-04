@@ -66,9 +66,9 @@ function setup(){
 	typeYSlider = createSlider(0,100,40); typeYSlider.position(15,397); typeYSlider.style('width','100px');
 	typeStrokeSlider = createSlider(0,10,2,0.1); typeStrokeSlider.position(15,427); typeStrokeSlider.style('width','100px');
 
-  xRotTweakSlider = createSlider(0,45,0); xRotTweakSlider.position(15,height-300); xRotTweakSlider.style('width','100px');
-  yRotTweakSlider = createSlider(0,45,0); yRotTweakSlider.position(15,height-270); yRotTweakSlider.style('width','100px');
-  zRotTweakSlider = createSlider(0,45,0); zRotTweakSlider.position(15,height-240); zRotTweakSlider.style('width','100px');
+  xRotTweakSlider = createSlider(0,45,0); xRotTweakSlider.position(15,467); xRotTweakSlider.style('width','100px');
+  yRotTweakSlider = createSlider(0,45,0); yRotTweakSlider.position(15,497); yRotTweakSlider.style('width','100px');
+  zRotTweakSlider = createSlider(0,45,0); zRotTweakSlider.position(15,527); zRotTweakSlider.style('width','100px');
   
   invertCheck = createCheckbox('',false); invertCheck.position(10,height - 200);
   xRotCameraSlider = createSlider(-180,180,15); xRotCameraSlider.position(-20,height-107); xRotCameraSlider.style('width','100px'); xRotCameraSlider.style('rotate',270);
