@@ -44,7 +44,7 @@ function preload() {
 function setup(){
   createCanvas(windowWidth,windowHeight, WEBGL);
   background(bkgdColor);
-  noSmooth();
+  smooth();
   textFont(font);
   
   inp = select("#textfield");
@@ -66,9 +66,9 @@ function setup(){
 	typeYSlider = createSlider(0,100,40); typeYSlider.position(15,397); typeYSlider.style('width','100px');
 	typeStrokeSlider = createSlider(0,10,2,0.1); typeStrokeSlider.position(15,427); typeStrokeSlider.style('width','100px');
 
-  xRotTweakSlider = createSlider(0,45,0); xRotTweakSlider.position(15,477); xRotTweakSlider.style('width','100px');
-  yRotTweakSlider = createSlider(0,45,0); yRotTweakSlider.position(15,507); yRotTweakSlider.style('width','100px');
-  zRotTweakSlider = createSlider(0,45,0); zRotTweakSlider.position(15,537); zRotTweakSlider.style('width','100px');
+  xRotTweakSlider = createSlider(0,45,0); xRotTweakSlider.position(15,517); xRotTweakSlider.style('width','100px');
+  yRotTweakSlider = createSlider(0,45,0); yRotTweakSlider.position(15,547); yRotTweakSlider.style('width','100px');
+  zRotTweakSlider = createSlider(0,45,0); zRotTweakSlider.position(15,577); zRotTweakSlider.style('width','100px');
   
   invertCheck = createCheckbox('',false); invertCheck.position(10,height - 200);
   xRotCameraSlider = createSlider(-180,180,15); xRotCameraSlider.position(-20,height-107); xRotCameraSlider.style('width','100px'); xRotCameraSlider.style('rotate',270);
@@ -116,7 +116,7 @@ function draw(){
   strokeWeight(1);
   line(10,130,130,130);
   line(10,350,130,350);
-  line(10,450,130,450);    
+  rect(5,450,125,160);    
   
   fill(strkColor);
 	textSize(9);
@@ -137,12 +137,13 @@ function draw(){
   text("TYPE: X-Scale " + typeX,15,366);
   text("TYPE: Y-Scale " + typeY,15,396);
   text("TYPE: Weight " + typeStroke,15,426);
+
+  text("Use to smooth form\nafter LATITUDE (x,y)\nor RIPPLE (z) adjust",15,470);  
+	text("TWEAK: X Rotation " + xRotTweak,15,516);
+	text("TWEAK: Y Rotation " + yRotTweak,15,546);
+	text("TWEAK: Z Rotation " + zRotTweak,15,576);
   
-	text("TWEAK: X Rotation " + xRotTweak,15,476);
-	text("TWEAK: Y Rotation " + yRotTweak,15,506);
-	text("TWEAK: Z Rotation " + zRotTweak,15,536);
-  
-    text("INVERT",30,height-186);
+	text("INVERT",30,height-186);
 	text("CAMERA: Zoom",15,height-22);
   
   translate(0,height);
@@ -150,10 +151,6 @@ function draw(){
   text("CAMERA: X-Rotation " + xRotCamera,45,20);
   text("CAMERA: Y-Rotation " + yRotCamera,45,60);
   text("CAMERA: Z-Rotation " + zRotCamera,45,100);
-  translate(376,150);
-  rotateZ(PI);
-  textSize(8);
-  text("Use to smooth form\nafter LATITUDE (x,y)\nor RIPPLE (z) adjust",0,0);
   
   pop();
   
