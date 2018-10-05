@@ -51,7 +51,7 @@ function setup(){
   
   rSlider = createSlider(0,1000,250); rSlider.position(15,17); rSlider.style('width','100px');
   stackNumSlider = createSlider(1,30,1); stackNumSlider.position(15,47); stackNumSlider.style('width','100px');
-  rRotateSlider = createSlider(-100,100,0); rRotateSlider.position(15,77); rRotateSlider.style('width','100px');  
+  rRotateSlider = createSlider(-100,100,-25); rRotateSlider.position(15,77); rRotateSlider.style('width','100px');  
   rOffsetSlider = createSlider(0,PI/2,0,0.01); rOffsetSlider.position(15,107); rOffsetSlider.style('width','100px');    
 
   rWaveCountSlider = createSlider(0,10,2); rWaveCountSlider.position(15,147); rWaveCountSlider.style('width','100px');
