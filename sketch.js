@@ -132,7 +132,7 @@ function draw(){
   text("WAVE: Longitude " + rLong,15,236);
   text("WAVE: Ripple " + rZaxis,15,266);
   text("WAVE: X-Scale " + strecherYsize,15,296);
-  text("WAVE: Y-Scale " + strecherYsize,15,326);
+  text("WAVE: Y-Scale " + strecherXsize,15,326);
 // line break  
   text("TYPE: X-Scale " + typeX,15,366);
   text("TYPE: Y-Scale " + typeY,15,396);
