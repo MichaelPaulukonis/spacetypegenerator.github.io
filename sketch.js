@@ -70,7 +70,7 @@ function setup(){
   yRotTweakSlider = createSlider(0,45,0); yRotTweakSlider.position(15,547); yRotTweakSlider.style('width','100px');
   zRotTweakSlider = createSlider(0,45,0); zRotTweakSlider.position(15,577); zRotTweakSlider.style('width','100px');
   
-  invertCheck = createCheckbox('',false); invertCheck.position(10,height - 200);
+  invertCheck = createCheckbox('',false); invertCheck.position(130,height - 60);
   xRotCameraSlider = createSlider(-180,180,15); xRotCameraSlider.position(-20,height-107); xRotCameraSlider.style('width','100px'); xRotCameraSlider.style('rotate',270);
   yRotCameraSlider = createSlider(-180,180,0); yRotCameraSlider.position(20,height-107); yRotCameraSlider.style('width','100px'); yRotCameraSlider.style('rotate',270);
   zRotCameraSlider = createSlider(-180,180,0); zRotCameraSlider.position(60,height-107); zRotCameraSlider.style('width','100px'); zRotCameraSlider.style('rotate',270);
@@ -143,7 +143,7 @@ function draw(){
 	text("TWEAK: Y Rotation " + yRotTweak,15,546);
 	text("TWEAK: Z Rotation " + zRotTweak,15,576);
   
-	text("INVERT",30,height-186);
+	text("INVERT",148,height-46);
 	text("CAMERA: Zoom",15,height-22);
   
   translate(0,height);
